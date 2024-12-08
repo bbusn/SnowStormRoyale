@@ -33,9 +33,19 @@ package-lock.json
 .env.production.local
 .env.local
 
-.vscode/
-.vscode
-.vscode-test
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # yarn v2
 .yarn/cache
@@ -46,3 +56,6 @@ package-lock.json
 
 *.sqlite
 backend/database.sqlite
+
+*.exe
+*.tar

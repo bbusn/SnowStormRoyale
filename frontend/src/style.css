@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'blesseaster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/blesseaster.woff2') format('woff2');
+}
+
+@layer base {
+    *::selection {
+        @apply bg-gray-200 text-black;
+    }
+}
+
+@layer components {
+  .key, .sound-key {
+    @apply cursor-pointer flex justify-center items-center gap-2 bg-gray-200 py-2 px-3 border-gray-300 border-2 text-xs rounded-md duration-500 transition-all hover:bg-gray-300 hover:border-gray-400 hover:duration-200 hover:transition-all active:bg-gray-400 active:border-gray-500 select-none active:duration-200 active:scale-95 active:transition-all;
+  }
+  .key.pressed {
+    @apply bg-gray-400 border-gray-500 select-none duration-200 scale-95 transition-all;
+  }
+  .key-title {
+    @apply select-none transition-all duration-200;
+  }
+}
